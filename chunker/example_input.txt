@@ -1,0 +1,18 @@
+FICTIONAL SAMPLE TEXT - FOR PIPELINE TESTING ONLY.
+Replace with real official legal texts (see data/registry/instrument_registry_template.csv;
+store official links there, not full texts, wherever redistribution is unclear).
+
+Artificial Intelligence (Example) Act of Atlantis, No. 12/2024
+
+Article 1
+Purpose and scope. This Act governs the development, deployment, and cross-border transfer of artificial intelligence systems within Atlantis.
+
+Article 2
+(1) A controller may transfer personal data used for training AI systems to a third country only where that country ensures an adequate level of protection, as determined by the Data Authority.
+(2) AI systems intended for high-risk uses shall undergo a conformity assessment before being placed on the market.
+
+Article 3
+The export of advanced AI accelerators and the provision of related cloud computing capacity to entities outside Atlantis requires a licence from the Export Control Office.
+
+Article 4
+Providers of general-purpose AI models shall publish transparency documentation and shall register the models with the Algorithm Registry before release. Public authorities shall facilitate the entry and residence of foreign AI researchers through the Atlantis AI Talent Programme.

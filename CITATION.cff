@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "Measuring AI Fragmentation in a Multipolar World: An AI-Enabled Legal-Coding Infrastructure"
+authors:
+  - family-names: Kong
+    given-names: Kun
+    affiliation: "University of Macau"
+  - family-names: Yuan
+    given-names: Lin
+    affiliation: "University of Macau"
+  - family-names: Chen
+    given-names: Xiaoyun
+    affiliation: "University of Macau"
+version: 0.1.0
+date-released: "2026-11-01"
+license: MIT
+keywords:
+  - artificial intelligence
+  - measurement
+  - legal coding
+  - international business
+  - regulatory fragmentation
+repository-code: "https://github.com/kongkun-kk/AI-Fragmentation-Index"

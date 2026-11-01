@@ -1,0 +1,2 @@
+provision_id,instrument_id,country,domain,direction,restrictiveness,bindingness,scope,quote,coder_1,coder_2,adjudicator,final_decision
+EX_AI_2024#002,EX_AI_2024,EX,data_governance,restrictive,0.5,binding_law,"controllers transferring AI training data to third countries","A controller may transfer personal data used for training AI systems to a third country only where that country ensures an adequate level of protection",,,,EXAMPLE ROW - replace

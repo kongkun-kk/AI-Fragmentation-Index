@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Fragmentation Coding Record",
+  "description": "One coding record per legal provision, produced by an LLM in Step 2 and finalized through Steps 3-6. Every record must cite the exact provision text (quote) that grounds the codes.",
+  "type": "object",
+  "required": ["chunk_id", "applies", "provenance"],
+  "properties": {
+    "chunk_id": {
+      "type": "string",
+      "description": "Stable identifier of the provision chunk, e.g. EU_AI_ACT#012"
+    },
+    "article_ref": {
+      "type": ["string", "null"],
+      "description": "Human-readable location of the provision inside the instrument"
+    },
+    "applies": {
+      "type": "boolean",
+      "description": "True if the provision falls within at least one coding domain; otherwise false and all coding fields are null"
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "data_governance",
+          "risk_based_ai_regulation",
+          "compute_export_controls",
+          "model_algorithm_oversight",
+          "ai_talent_migration"
+        ]
+      },
+      "description": "Domains the provision touches (may be more than one)"
+    },
+    "direction": {
+      "type": ["string", "null"],
+      "enum": ["restrictive", "permissive", "neutral", null],
+      "description": "Whether the provision restricts or enables the coded activity"
+    },
+    "restrictiveness": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "0-1 restrictiveness score, rubric-anchored (see schema/rubrics.md)"
+    },
+    "bindingness": {
+      "type": ["string", "null"],
+      "enum": ["binding_law", "soft_law", "guidance", null],
+      "description": "Legal force of the provision"
+    },
+    "scope": {
+      "type": ["string", "null"],
+      "description": "Which actors and AI uses the provision covers (one sentence)"
+    },
+    "quote": {
+      "type": ["string", "null"],
+      "description": "Exact verbatim text span from the provision that justifies the codes"
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["model", "model_version", "prompt_version", "schema_version", "timestamp"],
+      "properties": {
+        "model": { "type": "string" },
+        "model_version": { "type": "string" },
+        "prompt_version": { "type": "string" },
+        "schema_version": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "git_sha": { "type": ["string", "null"] },
+        "auditor": { "type": ["string", "null"] },
+        "adjudication_status": {
+          "type": "string",
+          "enum": ["not_adjudicated", "in_adjudication", "adjudicated"]
+        }
+      }
+    }
+  }
+}

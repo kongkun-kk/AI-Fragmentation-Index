@@ -1,0 +1,4 @@
+instrument_id,country,instrument_name,type,promulgation_date,effective_date,official_url,retrieval_date,language,notes
+EU_AI_ACT,EU,"Regulation (EU) 2024/1689 (Artificial Intelligence Act)",regulation,2024-06-13,2024-08-01,https://eur-lex.europa.eu/eli/reg/2024/1689/oj,2026-11-01,EN,EXAMPLE ROW - verify details
+CN_GENAI,CN,"Interim Measures for the Management of Generative Artificial Intelligence Services",administrative_measure,2023-07-10,2023-08-15,https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm,2026-11-01,ZH,EXAMPLE ROW - verify details
+EX_AI_2024,EX,"Artificial Intelligence (Example) Act of Atlantis No. 12/2024",law,2024-01-01,2024-01-01,,2026-11-01,EN,FICTIONAL EXAMPLE - for pipeline testing only

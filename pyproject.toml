@@ -1,0 +1,22 @@
+[project]
+name = "ai-fragmentation"
+version = "0.1.0"
+description = "AI-enabled measurement of cross-national AI regulatory fragmentation and a reusable legal-coding infrastructure"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+llm = ["openai>=1.30", "python-dotenv>=1.0"]
+reliability = ["krippendorff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pipeline", "index", "validation", "chunker"]

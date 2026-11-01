@@ -1,0 +1,10 @@
+# Core
+numpy>=1.24
+pandas>=2.0
+
+# LLM calls (needed for real runs; not needed for --dry-run demo)
+openai>=1.30
+python-dotenv>=1.0
+
+# Krippendorff's alpha (recommended for the reliability script)
+krippendorff>=0.6

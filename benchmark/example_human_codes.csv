@@ -1,0 +1,17 @@
+unit_id,coder,value
+u01,coder_a,data_governance
+u01,coder_b,data_governance
+u02,coder_a,compute_export_controls
+u02,coder_b,compute_export_controls
+u03,coder_a,risk_based_ai_regulation
+u03,coder_b,risk_based_ai_regulation
+u04,coder_a,model_algorithm_oversight
+u04,coder_b,model_algorithm_oversight
+u05,coder_a,data_governance
+u05,coder_b,data_governance
+u06,coder_a,ai_talent_migration
+u06,coder_b,ai_talent_migration
+u07,coder_a,compute_export_controls
+u07,coder_b,risk_based_ai_regulation
+u08,coder_a,data_governance
+u08,coder_b,data_governance
